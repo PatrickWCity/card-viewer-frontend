@@ -4,12 +4,14 @@
     "default": {
       "connector": "strapi-hook-bookshelf",
       "settings": {
-        "client": "sqlite",
-        "filename": ".tmp/data.db"
+        "client": "mysql",
+        "database": "${process.env.DATABASE_NAME || 'rider'}",
+        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
+        "port": "${process.env.DATABASE_PORT || 3306}",
+        "username": "${process.env.DATABASE_USERNAME || 'root'}",
+        "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
-      "options": {
-        "useNullAsDefault": true
-      }
+      "options": {}
     }
   }
 }

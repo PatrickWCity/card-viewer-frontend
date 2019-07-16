@@ -3,11 +3,11 @@
   "connections": {
     "default": {
       "settings": {
-        "client": "sqlite",
+        "client": "postgres",
         "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
+        "port": "${process.env.DATABASE_PORT || 5432}",
         "srv": "${process.env.DATABASE_SRV || false}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
+        "database": "${process.env.DATABASE_NAME || 'rider'}",
         "username": "${process.env.DATABASE_USERNAME || ''}",
         "password": "${process.env.DATABASE_PASSWORD || ''}",
         "ssl": "${process.env.DATABASE_SSL || false}"
@@ -15,7 +15,8 @@
       "options": {
         "ssl": "${process.env.DATABASE_SSL || false}",
         "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}"
-      }
+      },
+      "connector": "strapi-hook-bookshelf"
     }
   }
 }
