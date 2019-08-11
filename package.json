@@ -1,22 +1,23 @@
 {
-  "name": "rider",
+  "name": "aceleracers",
   "version": "1.0.0",
-  "description": "My marvelous Nuxt.js project",
+  "description": "My wicked Nuxt.js project",
   "author": "Patrick Ciudad",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "test": "jest",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/pwa": "^2.6.0",
     "nuxt": "^2.0.0",
-    "strapi-sdk-javascript": "^0.3.1"
+    "strapi-sdk-javascript": "^0.3.1",
+    "svg-text": "^0.5.1",
+    "svg-text-wrap": "0.0.1",
+    "svg.js": "^2.7.1"
   },
   "devDependencies": {
     "tailwindcss": "^1.0.0",
@@ -35,11 +36,6 @@
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
     "prettier": "^1.16.4",
-    "@vue/test-utils": "^1.0.0-beta.27",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^24.1.0",
-    "jest": "^24.1.0",
-    "vue-jest": "^3.0.3",
     "nodemon": "^1.18.9"
   }
 }

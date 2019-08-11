@@ -1,6 +1,6 @@
-# rider
+# aceleracers
 
-> My marvelous Nuxt.js project
+> My wicked Nuxt.js project
 
 ## Build Setup
 

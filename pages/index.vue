@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        rider
+        aceleracers
       </h1>
       <h2 class="subtitle">
-        My marvelous Nuxt.js project
+        My wicked Nuxt.js project
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">

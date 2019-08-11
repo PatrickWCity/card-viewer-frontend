@@ -7,12 +7,12 @@ export const state = () => ({
 })
 
 export const getters = {
-  countCards: (state) => state.cards.length,
-  getCardById: (state) => (id) => state.cards.find((card) => card.id === id),
-  getSomeCardById: (state) => (slug) =>
-    state.cards.some((card) => card.slug === slug),
-  getCardBySlug: (state) => (slug) =>
-    state.cards.find((card) => card.slug === slug)
+  countCards: state => state.cards.length,
+  getCardById: state => id => state.cards.find(card => card.id === id),
+  getSomeCardById: state => slug =>
+    state.cards.some(card => card.slug === slug),
+  getCardBySlug: state => slug =>
+    state.cards.find(card => card.slug === slug)
 }
 
 export const mutations = {
@@ -30,6 +30,11 @@ export const actions = {
                   id
                   name
                   description
+                  speed
+                  power
+                  performance
+                  foil
+                  hologram
                   team {
                     name
                   }
@@ -38,9 +43,11 @@ export const actions = {
                     lastName
                   }
                   terrains {
+                    id
                     name
                   }
                   modabilities {
+                    id
                     name
                   }
                   type {

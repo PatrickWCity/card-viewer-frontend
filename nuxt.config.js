@@ -14,7 +14,11 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      { src: 'https://d3plus.org/js/d3.js' },
+      { src: 'https://d3plus.org/js/d3plus.js' }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -31,7 +35,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/eslint-module'],
+  modules: ['@nuxtjs/eslint-module'],
   /*
    ** Build configuration
    */
