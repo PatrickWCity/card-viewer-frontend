@@ -1,0 +1,66 @@
+{
+  "connection": "default",
+  "collectionName": "cards",
+  "info": {
+    "name": "card",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "speed": {
+      "type": "integer"
+    },
+    "power": {
+      "type": "integer"
+    },
+    "performance": {
+      "type": "integer"
+    },
+    "actionPoint": {
+      "type": "integer"
+    },
+    "foil": {
+      "type": "boolean"
+    },
+    "hologram": {
+      "type": "boolean"
+    },
+    "terrains": {
+      "collection": "terrain",
+      "via": "cards",
+      "dominant": true
+    },
+    "modabilities": {
+      "collection": "modability",
+      "via": "cards",
+      "dominant": true
+    },
+    "type": {
+      "model": "type",
+      "via": "cards"
+    },
+    "team": {
+      "model": "team",
+      "via": "cards"
+    },
+    "illustrator": {
+      "model": "illustrator",
+      "via": "cards"
+    }
+  }
+}

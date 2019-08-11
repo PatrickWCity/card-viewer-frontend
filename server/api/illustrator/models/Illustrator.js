@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Category` model.
+ * Lifecycle callbacks for the `Illustrator` model.
  */
 
 module.exports = {

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/modabilities",
+      "handler": "Modability.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modabilities/count",
+      "handler": "Modability.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modabilities/:id",
+      "handler": "Modability.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/modabilities",
+      "handler": "Modability.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modabilities/:id",
+      "handler": "Modability.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/modabilities/:id",
+      "handler": "Modability.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

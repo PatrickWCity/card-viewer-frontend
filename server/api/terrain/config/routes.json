@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/terrains",
+      "handler": "Terrain.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/terrains/count",
+      "handler": "Terrain.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/terrains/:id",
+      "handler": "Terrain.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/terrains",
+      "handler": "Terrain.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/terrains/:id",
+      "handler": "Terrain.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/terrains/:id",
+      "handler": "Terrain.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

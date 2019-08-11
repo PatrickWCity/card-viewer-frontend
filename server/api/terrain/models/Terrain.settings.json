@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "terrains",
+  "info": {
+    "name": "terrain",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "collection": "card",
+      "via": "terrains"
+    }
+  }
+}
