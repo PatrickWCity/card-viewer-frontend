@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "strapi-sdk-javascript": "^0.3.1"
   },
   "devDependencies": {
     "tailwindcss": "^1.0.0",
